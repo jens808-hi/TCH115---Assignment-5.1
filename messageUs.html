@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanak Kitchen</title>
+    <!--adds a link to my css file-->
+    <link rel="stylesheet" href="./messageUs.css">
+    <!--adds a link to my js file-->
+    <script src="./messageUs.js"></script>
+        
+</head>
+    <body>
+        <header>
+            <div class="main">
+                <dir class="logo">
+                    <img src="./Kanak Kitchen logo.png" alt="kanak kitchen logo">
+                </dir>
+                    <ul>
+                        <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/kanak_website%20-%20RSA%20Final%20Project.html">Home</a></li>
+                        <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/menu.html">Menu</a></li>
+                        <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/meet.html">Meet the Ohana</a></li>
+                        <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/checkout.html">Checkout</a></li>
+                        <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/contactUs.html">Contact Us</a>
+                            <div class="sub-menu">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home"></i>Message Us</a></li>
+                    </ul>
+                        
+                    </ul>
+                        </div>
+                        </li>
+                    </ul>
+            </div> 
+                <div class="title">
+                    <h1>K a n a k &nbsp;&nbsp;K i t c h e n</h1>
+                        <div class="form-container">
+                            <div class="row">
+                                <!--Displays message box to the left-->
+                                <div class="message_column">
+                                    <h3><label id="message_label">Type your message here:</label></h3><br>
+                                    <textarea id="input_message" placeholder="Enter your message"></textarea>
+                                </div>
+                              
+                            </div>
+                            <!--Input from user data entry-->
+                            <!--Displays the other input fields to the right-->
+                            <div class="inputs-column">
+                                <h3>Please fill out the form below:</h3><br>
+                                <!--Output of the data user entered is displayed-->
+                                <p id="conc_names"></p>
+                                <br>
+                                <label id="firstnm_label">First Name</label>&nbsp;
+                                <input id="input_firstnm" type="text" placeholder="Enter First name"><br><br>
+
+                                <label id="lastnm_label">Last Name</label>&nbsp;&nbsp;
+                                <input id="input_lastnm" type="text" placeholder="Enter Last name"><br><br>
+
+                                <label id="city_label">City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="input_city" type="text" placeholder="Enter City"><br><br>
+
+                                <label id="state_label">State</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="input_state" type="text" placeholder="Enter State";/><br><br>
+
+                                <label id="zipCode_label">ZipCode</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="input_zipc" type="text" placeholder="Enter Zipcode";/><br><br>
+
+                                <label id="phone_label">Phone #</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="input_phone" type="text" placeholder="Enter Phone #";/><br><br>
+
+                                <label id="email_label">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="input_email" type="text" placeholder="Enter Email";/><br><br>
+                            <br>
+
+                                <!--button to submit user data-->
+                                <button id="run_check_btn" onclick="nameCheck()">Submit Data</button>
+                                <p></p>
+                                <br>
+                                <br>
+                                    <h4>Hours: &nbsp;Mon - Fri | 9am - 7pm&nbsp;&nbsp;/&nbsp;&nbsp;   Sat - Sun | 10am - 8pm</h4>
+                            </div>
+                <div class="thanks">
+                    <!--image animation of the word Aloha with alt text for image-->
+                    <img id="mahalo" src="./mahalo-thank-you.gif" alt="Animated Aloha logo">
+                </div>
+            </div>
+        </div>  
+        </header>
+    </body>
+        <footer>
+            &copy; 2025 Kanak Kitchen | &nbsp;Created by Jena Kahili | &nbsp; Final Project HTML - Assignment 4.1 | &nbsp; Univeristy of Advancing Technology | &nbsp; CSC104    
+        </footer>
+</html>
