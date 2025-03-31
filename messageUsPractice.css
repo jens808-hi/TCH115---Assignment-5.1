@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./hawaii\ beach\ 2.jpg);
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+}
+
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 17px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    color: rgb(205, 248, 176);
+    background-color: transparent;
+}
+
+ul li.active a{
+    color: rgb(241, 120, 239);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+ul li a:visited{
+    color: rgb(101, 215, 243);
+    background-color: transparent;
+    text-decoration: underline;
+ }
+
+.logo img{
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 12%;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+#mahalo{
+    position: absolute;
+    height:6%;
+    width: 20%;
+    right: 14%;
+    bottom: -10px;
+    opacity: 0.8;
+}
+
+
+.main{
+    max-width: 1250px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 18%;
+    left: 43%;
+}
+
+.title h1{
+    color: rgba(243, 98, 224, 0.877);
+    font-size: 80px;
+    border-radius: 10%;
+    text-align: left;   
+    font-stretch: ultra-expanded;
+    transform: translate(-50%,-50%);
+    font-family: fantasy;
+    opacity: 0.9;
+}
+
+h3{
+    text-align: left;
+    border-radius: 30%;
+    border-color: #f177eb;
+    border-style: block;
+    color: #3ae9c3;
+}
+    
+
+h4{
+    position: absolute;
+    text-align: center;
+    color: rgb(243, 169, 84);
+    left: -40%;
+    top: 60px;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: bold;
+}
+
+
+button{
+    border: 1px solid #f177eb;
+    padding: 5px 10px;
+    color: #4b1b99;
+    transition: 0.5 ease;
+    font-size: 18 px;
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    top: 30%;
+}
+
+button:hover{
+    background-color:rgb(219, 80, 166);
+    color: black;
+}
+
+
+.sub-menu{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.sub-menu ul{
+    position: absolute;
+}
+
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb1, 45, 117;
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin-top: 6px
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px ;
+}
+
+#conc_names{
+    color: #d2dd39;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+#input_firstnm {
+    height: 40px;
+    width: 250px;
+    color: #4b1b99;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: center;  
+ }
+ #input_lastnm{
+    height: 40px;
+    width: 250px;
+    color: #4b1b99;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: center;  
+ }
+ #input_city{
+   height: 40px;
+   width: 250px;
+   color: #4b1b99;
+   padding: 0 25px;
+   font-size: 14px;
+   border-radius: 10px;
+   border-color: rgb(238, 155, 87);
+   text-align: center;  
+ }
+ #input_state{
+   height: 40px;
+   width: 250px;
+   color: #4b1b99;
+   padding: 0 25px;
+   font-size: 14px;
+   border-radius: 10px;
+   border-color: rgb(238, 155, 87);
+   text-align: center;  
+ }
+ #input_zipc{
+    height: 40px;
+    width: 250px;
+    color: #4b1b99;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: center;  
+ }
+ #input_phone{
+    height: 40px;
+    width: 250px;
+    color: #4b1b99;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: center;  
+ }
+ #input_email{
+    height: 40px;
+    width: 250px;
+    color: #4b1b99;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: center;  
+ }
+ #input_message{
+    height: 40px;
+    width: 250px;
+    color: #4b1b99;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: center;  
+ }
+ #firstnm_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+ }
+ #lastnm_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+ }
+ #city_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+#state_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+
+ #zipCode_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+#phone_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+#email_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+#message_label{
+    color: #75cdf0;
+    font-weight: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+/* container for the form elements */
+.form-container{
+    display: flex;
+    gap: 70px; /* Spacing between the two columns */
+}
+
+
+/* This class handles the message input (textarea) positioning */
+.message-column {
+    flex: 1; /* Allow this column to take up remaining space */
+    width: 60%; /* Adjust width as needed */
+    padding-right: 20px; /* Optional: some padding between the columns */
+    column-rule: 1px solid #f177eb;
+
+}
+
+/* This class holds the rest of the form inputs */
+.inputs-column {
+    flex: 2; /* These fields take up more space */
+    width: 60%; /* Adjust width as needed */
+}
+
+/* Style the message textarea */
+#input_message {
+    height: 100px;  /* Adjust height */
+    width: 100%;    /* Take up full width of the container */
+    color: #4b1b99;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border-color: rgb(238, 155, 87);
+    text-align: left;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 12px;
+    background-color: black;
+    width: 100%;
+    color: rgb(138, 197, 252);
+    padding: 10px;
+}
