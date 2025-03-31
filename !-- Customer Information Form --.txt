@@ -1,0 +1,25 @@
+Code to create form for customer input and to store on website
+
+<!-- Customer Information Form -->
+    <h3>Customer Information</h3> 
+    <form id="customer-info">
+        <input type="text" placeholder="First name" id="fname" required><br> 
+        <input type="text" placeholder="Last name" id="lname" required><br>
+        <input type="text" placeholder="Street name" id="street" required><br>
+        <input type="text" placeholder="City" id="city" required><br>
+        <input type="text" placeholder="State" id="state" required><br>
+        <input type="text" placeholder="Zipcode" id="zipcode" required><br>
+        <input type="text" placeholder="Email" id="email" required><br>
+        <input type="text" placeholder="Card Number" id="Credit Card No." required><br>
+        <input type="text" placeholder="Expiration Date" id="expiration" required><br>
+        <input type="text" placeholder="CVV" required><br> 
+    </form>
+
+    <button onclick="completeOrder()">Submit Order</button>
+
+    <div id="order-receipt" style="display:none;">
+        <h3>Payment Receipt</h3>
+        <p>Items: <span id="receipt-items"></span></p>
+        <p>Total: <span id="total-amount"></span></p>
+        <p>Order Ready for Pickup: <span id="pickup-time"></span></p>
+    </div>

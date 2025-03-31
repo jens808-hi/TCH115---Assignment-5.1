@@ -1,0 +1,379 @@
+/* Universal reset for all elements to remove default margin and padding and set a default font */
+*{
+    margin: 0px; /* Removes margin from all elements */
+    padding: 0px; /* Removes margin from all elements */
+    font-family: Century; /* Sets the default font to 'Century' */
+}
+
+* {box-sizing:border-box} /* Changes the size of elements on the page */
+
+/* Slideshow container */
+.slideshow-container {
+    top: 100%; /* Positions the container vertically at the very bottom of the screen (100% of the height) */
+    left: 55%; /* Positions the container horizontally, 55% of the way across the width of the page */
+    transform: translate(-50%, -50%); /* Moves the container back by 50% both horizontally and vertically, effectively centering it on the page */
+    width: 118%; /* Makes the container slightly wider than the screen width (118% of the available space), allowing the images to overflow a little */
+    height: 90%;  /* Sets the container's height to 90% of the height of the screen or its parent element */
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    margin: auto; /* Centers the container horizontally, ensuring it aligns properly in the middle of the page */
+    display: flexbox; /* Sets the container to use flexbox layout, which makes it easier to align and space items within the container */
+    margin-top: -60px; /* Shifts the container up by 60px, essentially pulling it closer to the top of the screen */
+}
+
+/* Ensure images in the slideshow scale correctly */
+.mySlides img {
+    width: 60%; /* Makes the image take up 60% of the width of the space it's in (container) */
+    height: 60%; /* Ensures the image takes up 60% of the height of it's container */
+    object-fit: cover; /* Prevents images from being distorted */
+    object-position: center; /* Centers the image in case it gets cropped */
+}
+
+/* Ensuring the 'pork' image follows the same resizing behavior */
+#fish {
+    width: 80%; /* Makes the image take up 80% of the width of the space it's in (container) */
+    height: 130%; /* Makes the image stretch to be 130% of the height of the container (making it taller) */
+    object-position: center; /* Centers the image if it gets cropped */
+    border: #5f4ef7; /* Gives the image a border with a color: light purple */
+    border-radius: 10px; /* Rounds the corners of the border by 10 pixels */
+    border-style: groove; /* Gives the border a grooved (carved) appearance */
+}
+
+/* Ensuring the 'pork' image follows the same resizing behavior */
+#pork {
+    width: 80%; /* Makes the image take up 80% of the width of the space it's in (container) */
+    height: 70%; /* Makes the image stretch to be 70% of the container's height (a little smaller than the others) */
+    object-position: center; /* Centers the image if it gets cropped */
+    border: #d42beb; /* Gives the image a border with a color: purplish-pink */
+    border-radius: 10px; /* Rounds the corners of the border by 10 pixels */
+    border-style: groove; /* Gives the border a grooved (carved) appearance, like a 3D effect */
+}
+
+/* Ensuring the 'pork' image follows the same resizing behavior */
+#mahi {
+    width: 80%; /* Makes the image take up 80% of the width of the space it's in (container) */
+    height: 60%; /* Ensures sure it stretches to fit the container height */
+    object-position: center; /* Centers the image if it gets cropped */
+    border: #44dbe0; /* Adds a border around the image with a specific blue color (#44dbe0) */
+    border-radius: 10px; /* Rounds the corners of the image, making them smooth and not sharp */
+    border-style: groove; /* Gives the border a 3D grooved appearance, like the image is framed */
+}
+
+/* Caption text styling */
+.text {
+    color: hsl(56, 86%, 62%); /* The caption's text will be a warm yellowish color (hsl values for yellow) */
+    font-size: 15px; /* The font size of the caption text is 15 pixels */
+    padding: 8px 12px; /* Adds padding around the text: 8px at the top and bottom, 12px on the left and right */
+    position: relative; /* Positions the text relatively */
+    bottom: 8px; /* Moves the text 8px up from its normal position */
+    width: 100%; /* Makes the caption stretch across the whole width of its container */
+    text-align: left; /* Aligns the text to the left within the container */
+    font-family: cursive; /* Uses a cursive-style font for a handwritten feel */
+    font-size: xx-large; /* Sets the font size to a very large size */
+    font-style: bold; /* Makes the font bold */
+    font-weight: 200; /* Makes the text a bit lighter than usual, despite being bold */
+}
+
+/* Number text styling (used for 1/3, 2/3, etc.) */
+.numbertext {
+    color: hsl(56, 86%, 62%); /* The caption's text will be a warm yellowish color (hsl values for yellow) */
+    font-size: 16px; /* The font size of the caption text is 15 pixels */
+    padding: 8px 12px; /* Adds padding around the text: 8px at the top and bottom, 12px on the left and right */
+    position: relative; /* Positions the text relatively */
+    right: -80%; /* Moves the number text 80% to the right of its original position, so it’s placed out to the side */
+    width: 20%; /* Makes the number text take up 20% of the width of the container */
+}
+
+/* Dots/bullets/indicators styling for carousel navigation */
+.dot{
+cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the dots, indicating they can be clicked */
+height: 8px; /* Sets the height of each dot to 8px */
+width: 10px; /* Sets the width of each dot to 10px */
+margin: 0 2px; /* Adds a tiny space of 2px between each dot */
+background-color: #bbb; /* Gives the dots a gray color (#bbb) */
+border-radius: 50%; /* Makes the dots round by giving them a circular shape */
+display: inline-block; /* Makes the dots appear next to each other in a row */
+transition: background-color 0.6s ease; /* Smoothly changes the dot’s color over 0.6 seconds when the user interacts */
+text-align: center; /* Centers any text inside the dots (though there’s no text in these dots) */
+}
+
+/* Active dot or hovered dot */
+.active, .dot:hover {
+    background-color: #bb0c0c; /* When a dot is active (selected) or hovered over, its color turns red (#bb0c0c) */
+}
+
+/* Container that holds the dots */
+.dot {
+    display: flex; /* Uses flexbox to arrange the dots */
+    justify-content: center; /* Ensures the dots are centered within the container */
+    margin-top: 60px; /* Adds some space (60px) above the dots to separate them from other content */
+}
+  
+/* Animation for fading effect */
+.fade {
+    animation-name: fade; /* Names the animation "fade" so we can use it */
+    animation-duration: 1.5s; /* Sets the fade animation to last for 1.5 seconds */
+}
+
+/* Keyframe Animation for fading effect */
+@keyframes fade {
+    from {opacity: .4} /* The animation starts with 40% opacity (slightly transparent) */
+    to {opacity: 1} /* The animation ends with full opacity (completely visible) */
+}
+
+/* On smaller screens (less than or equal to 300px in width), decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px} /* Changes the text size to 11px to fit better on small screens */
+}
+
+/* Header section styling */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/hawaii\ beach\ 2.jpg);
+    height: 100vh; /* Makes the header take up the full height of the viewport */
+    background-size: cover; /*Ensures the background image covers the entire header */
+    background-position: center; /* Centers the background image */
+    min-height: 150px; /* Ensures the header has at least 150px height */
+}
+
+/* Styling for unordered list (navigation links) */
+ul{
+    float: right; /* Positions the navigation menu to the right */
+    list-style: none; /* Removes bullet points from list items */
+    margin-top: 30px; /* Adds top margin to the list */
+    min-height: 400px; /* Sets a minimum height for the navigation menu */
+    margin-right: 40px; /* Adds right margin to the list */
+    font-size: 17px;/* Sets the font size for the links */
+}
+
+/* Styling for each list item in the navigation */
+ul li{
+    display: inline-block; /* Displays list items horizontally */
+}
+
+/* Styling for anchor (link) tags inside list items */
+ul li a{
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* Sets the link color to white */
+    padding: 5px 20px; /* Adds padding inside the links */
+    border: 1px solid transparent; /* Adds a transparent border around the links */
+    transition: 0.5 ease; /* Adds a smooth transition effect */
+}
+
+/* Styling when hovering over the navigation links */
+ul li a:hover{
+    color: rgb(205, 248, 176); /* Changes link color when hovered */
+    background-color: transparent; /* Keeps the background transparent */
+}
+
+/* Styling for the active navigation link (e.g., Home) */
+ul li.active a{
+    color: rgb(241, 120, 239); /* Changes color for the active link */
+    background-color: transparent; /* Keeps background transparent */
+    text-decoration: none; /* Removes underline from active link */
+}
+
+/* Styling for visited links */
+ul li a:visited{
+    color: rgb(101, 215, 243); /* Changes color for visited links */
+    background-color: transparent; /* Keeps background transparent */
+    text-decoration: underline; /* Underlines visited links */
+ }
+
+ /* Logo styling */
+.logo img{ 
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    top: 14%; /* Positions the logo 14% from the top of the page */
+    left: 12%; /* Positions the logo 5% from the left of the page */
+    width: 12%; /* Sets the logo width to 12% of the page width */
+    height: auto; /* Keeps the logo's aspect ratio */
+    opacity: 0.7; /* Makes the logo slightly transparent */
+}
+
+/* Styling for the music button */
+#music{
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    bottom: 10%; /* Positions it 10% from the bottom */
+    text-align: left; /* Aligns text to the left inside the button */
+    border-color: #4b1b99; /* Sets the border color */
+    border-radius: 5px; /* Rounds the corners of the button */
+    left: 20%; /* Positions the button 20% from the left */
+}
+
+/* Styling for the animated "Aloha" logo */
+#aloha{
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    height: 10%; /* Sets the height of the image to 10% */
+    width: 110px; /* Sets the width of the image to 110px */
+    right: 119%; /* Positions the image off the right of the page */
+    bottom: -31%; /* Positions the image 31% below the bottom of the page */
+    opacity: 0.8; /* Makes the text 80% visible */
+}
+
+/* Main content container */
+.main{
+    max-width: 1250px; /* Sets the maximum width of the container to 1250px */
+    margin: auto; /* Centers the container horizontally, ensuring it aligns properly in the middle of the page */
+}
+
+/* Title section styling */
+.title{
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    top: 25%; /* Positions the title 25% from the top */
+    left: 47%; /* Positions the title 47% from the left */
+    transform: translateX(-10%); /* Slightly shifts the title to the left by 10% to center it */
+}
+
+/* Styling for the title text */
+.title h1{
+    color: rgb(184, 95, 142); /* Sets the text color */
+    font-size: 80px; /* Sets the font size */
+    text-align: left; /* Aligns the text to the left */
+    font-stretch: ultra-expanded; /* Stretches the font horizontally for a dramatic effect */
+    transform: translate(-50%,-50%); /* Centers the title both horizontally and vertically */
+    font-family: fantasy; /* fantasy-style font for the title */
+    opacity: 0.9; /* Makes the title 90% visible */
+}
+
+/* General styling for all h3 elements (headings) */
+h3{
+    color: rgb(130, 231, 231);/* Sets the text color */
+    font-family: serif; /* Sets the font to serif */
+    font-size: 24px; /* Sets the font size */
+    font-weight: 200; /* Sets the font weight */
+    font-style: bold; /* Makes the font bold */
+    margin-top: 10%; /* Adds top margin */
+}
+
+/* Styling for the hours section */
+.hours h3{
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    color: rgb(248, 113, 72); /* Sets the text color */
+    left: -125%;  /* Moves the text 125% to the left side */
+    top: 585px; /* Positions the text 585px from the top */
+    font-family: cursive; /* Sets the font to cursive */
+    font-size: 22px; /* Sets the font size */
+    font-weight: 100; /* Sets the font weight */
+    font-style: italic; /* Makes the font italic */
+}
+
+/* Styling for the button sections (button1) */
+button1{
+    top: 40%; /* Positions the button vertically at 40% from the top */
+    left: 40%; /* Positions the button horizontally at 40% from the left */
+    transform: translate(-50%,-50%); /* Centers the button horizontally and vertically */
+}
+
+/* Styling for the button sections (button2) */
+button2{
+    top: 40%; /* Positions the button vertically at 40% from the top */
+    left: 40%; /* Positions the button horizontally at 40% from the left *
+    transform: translate(-50%,-50%); /* Centers the button horizontally and vertically */
+}
+
+/* Styling for the button sections (button3) */
+button3{
+    top: 40%; /* Positions the button vertically at 40% from the top */
+    left: 40%; /* Positions the button horizontally at 40% from the left */
+    transform: translate(-50%,-50%);
+}
+
+/* Styling for the 'Place Order' and 'Explore Gallery' buttons */
+.btn{
+    border: 1px solid #2b28f3de; /* Sets the border color */
+    border-radius: 20px; /* Rounds the corners */
+    padding: 5px 20px; /* Adds padding inside the button */
+    color: #ee39c7dc;  /* Sets the text color */
+    transition: 0.5 ease; /* Adds a transition effect on hover */
+    font-size: 18 px; /* Sets the font size */
+    text-decoration: none; /* Removes underline from the link */
+    text-align: center; /* Centers the text inside the button */
+    width: 30%; /* Centers the text inside the button */
+    top: 25%; /* Positions it 25% from the top */
+    font-weight: 100; /* Sets the font weight */
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    margin-left: 8%; /* Adds space of 8% to the left */
+}
+
+/* Styling for the 'Play Local Island Music' button */
+#onbtn{
+    border: 1px solid #f5bc43; /* Sets the border color */
+    border-radius: 40px; /* Rounds the corners */
+    border-style: groove; /* Applies groove border style */
+    padding: 8px 10px; /* Adds padding inside the button */
+    background-color: transparent; /* Keeps the background transparent */
+    color: #1edf75; /* Sets the text color */
+    transition: 0.5 ease; /* Adds transition effect on hover */
+    font-family: cursive; /* Uses a cursive-style font for the text */
+    font-style: normal; /* Keeps the font style normal */
+    font-stretch: extra-expanded; /* Stretches the font extra wide */
+    text-decoration: none; /* Removes any text decoration */
+    text-align: center; /* Centers the text inside the button */
+    width: 30%; /* Makes the button width 30% of the container */
+    top: -70%; /* Moves the button up by 70% */
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    left: 130%; /* Moves the button 130% to the right of its container */
+    font-size: large; /* Increases the font size */
+}
+
+/* Hover effect for buttons */
+.btn:hover{
+    background-color:rgb(238, 155, 87); /* Changes background color on hover */
+    color: black; /* Changes text color to black on hover */
+}
+
+/* Hover effect for #onbtn */
+#onbtn:hover{
+    background-color:rgb(238, 155, 87); /* Changes background color on hover */
+    color: black; /* Changes text color to black on hover */
+}
+
+/* Sub-menu for dropdown navigation */
+.sub-menu{
+    display: none; /* Hides the sub-menu by default */
+    top: 6%; /* Positions the submenu 6% from the top */
+    position: relative; /* Positions the submenu relatively */
+}
+
+/* Sub-menu unordered list styling */
+.sub-menu ul{
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+}
+
+/* Hover effect for main menu items showing sub-menu */
+.main ul li:hover .sub-menu{
+    display: block;  /* Displays the sub-menu list items */
+    position: absolute; /* Positions the container exactly where specified, without affecting other elements around it */
+    background-color: rgb1, 45, 117;
+    margin-top: 12px; /* Adds top margin */
+    margin-left: -8px; /* Adjusts the left margin */
+    padding: 10px;
+}
+
+/* Styling for sub-menu list items */
+.main ul li:hover .sub-menu ul{
+    display: list-item; /* Displays the sub-menu list items */
+    margin-top: 6px /* Positions the submenu 6% from the top */
+
+}
+
+/* Sub-menu item styling */
+.main ul li:hover .sub-menu ul li{
+    width: 75px; /* Sets the width of the submenu item */
+    padding: 5px; /* Adds padding */
+    border-bottom: 1px #fff; /* Adds a white border at the bottom */
+    background: transparent; /* Keeps the background transparent */
+    transition: 0.4 ease; /* Adds a transition effect to the background color on hover */
+    text-align: right; /* Aligns the text to the left */
+    border-radius: 5px ; /* Keeps the border square (no rounded corners) */
+}
+
+/* Footer styling */
+footer {
+    position: relative; /* Positions the footer relatively */
+    bottom: 0%; /* Aligns the footer to the bottom */
+    left: 0%; /* Aligns the footer to the left */
+    height: 20px; /* Sets the height of the footer to 20px */
+    background-color: black; /* Sets the background color of the footer to black */
+    width: 100%; /* Makes the footer width 100% of the screen */
+    color: rgb(138, 197, 252); /* Sets the footer text color to light blue */
+    padding: 18px; /* Adds padding inside the footer */
+}

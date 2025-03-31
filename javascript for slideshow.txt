@@ -1,0 +1,30 @@
+javascript for slideshow:
+
+(()=>{
+const slideshow = {
+    items [], 
+    timmy: 0, 
+    delay: 3000, 
+    init: function(){
+        //check for the slideshow container div
+        if( document.querySelector('.slideshow')){
+            //create the content div
+            let divC = document.createElement('div');
+            divC.className = 'content';
+            document.querySelector('.slideshow').appendChild(divC);
+
+            //load the CSS file for the slideshow
+            let link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = './slideshow.css';
+            document.head.appendChild(link);
+
+            //get the slideshow content
+            let url = './slideshow.json;
+            fetch(url)
+            .then((response)=>{
+                return response.json();
+            })
+            /then(slideshow.loadContents)
+            .catch((err)=>{
+                console.log(

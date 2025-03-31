@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./Jen_Ai.css">
+    <script src="./Jen_Ai.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style> 
+        audio::-webkit-media-controls{ /* Hides the default media controls for audio players (play, pause, etc.) */
+            display: none;
+        }
+    </style>
+</head>
+<body class="menu-page">
+    <!-- Title Section -->
+    <section id="menu-page"></section>
+        <h1>K a n a k &nbsp;&nbsp;K i t c h e n &nbsp;&nbsp;M e n u</h1>
+    </section>
+    
+        <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/kanak_website%20-%20RSA%20Final%20Project.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/meet.html">Meet the Ohana</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/gallery.html">Gallery</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/checkout.html">Checkout</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/contactUs.html">Contact Us</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/reviews.html">Reviews</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/recipes.html">Recipes</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/RSA%20-%20Final%20Project/social.html">Social Media</a></li>
+        </ul>
+
+        <section id="social-media">
+            <h5>Follow Us</h5>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                    <img src="./images/fb logo.png" alt="" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a> 
+                <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+                    <img src="./images/ig.png" alt="" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank" class="social-button X">
+                    <img src="./images/x logo.jpg" alt="" class="social-icon">
+                    <i class="fab fa-X"></i>
+                </a>
+                <a href="https://www.TikTok.com" target="_blank" class="social-button X">
+                    <img src="./images/tik tok.jpg" alt="" class="social-icon">
+                    <i class="fab fa-TikTok"></i>
+                </a>
+            </div>
+        </section>
+
+        <div class="button"> <!-- Button to play island music -->
+            <button id="islandMusic2" onclick="playOn2()">Play Island Music2</button> <!-- Button to play local island music -->
+        </div>
+
+        <div class="music"> <!-- Audio player for background music -->
+            <audio controls loop> <!-- Audio controls and loop option for continuous play -->
+                <audio id="island2music" src="./music/blue-island-144122 hawaii music.mp3" type="audio/mp3"> <!-- Source for Hawaiian background music -->
+            </audio>
+        </div>
+
+        <ul>
+            <!-- The Home button will be moved using CSS -->
+            <li><button class="home-btn" onclick="scrollToTop()">Back to Top</button></li>
+            <!-- Other links -->
+        </ul>
+    </nav>
+
+    <!-- Pupu's Category -->
+    <div class="menu-category">
+        <h3>Pupu's</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('Smoked Meat & Onions')">
+                <img src="./images/smoked meat and onion.jpeg" alt="Smoked Meat & Onions">
+                <h4>Smoked Meat & Onions</h4>
+                <h4>$12.99</h4>
+                <p><h4>Hawaiian style marinated pork smoked to perfection, seared and tossed with slivered onions and guava jelly.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Calamari')">
+                <img src="./images/fried calamari.jpg" alt="Calamari">
+                <h4>Calamari</h4>
+                <h4>$13.99</h4>
+                <p><h4>Beer battered and deep fried squid paired with chipotle ranch dipping sauce.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Poke')">
+                <img src="./images/poke.jpg" alt="Poke">
+                <h4>Poke</h4>
+                <h4>$14.99</h4>
+                <p><h4>Fresh ahi, salmon and tako tossed in shoyu, garlic and sesame oil dressing with kukui nut, seaweed, roasted sesame seeds and tobiko.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Spam Musubi')">
+                <img src="./images/spam musubi 1.jpeg" alt="Spam Musubi">
+                <h4>Spam Musubi</h4>
+                <h4>$5.99</h4>
+                <p><h4>The iconic Hawaiian snack for the beach, traveling or just on the go. 
+                    Pan-fried spam, glazed in a teriyaki style musubi sauce wrapped in nori, and furikake seasoned rice.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Truffle Fries')">
+                <img src="./images/truffle fries.png" alt="Truffle Fries">
+                <h4>Truffle Fries</h4>
+                <h4>$6.99</h4>
+                <p><h4>French fries tossed in truffle oil and topped with minced garlic, grated truffles and parmesan cheese.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Edamame')">
+                <img src="./images/Edamame.jpeg" alt="Edamame">
+                <h4>Edamame</h4>
+                <h4>$7.99</h4>
+                <p><h4>Edamame pods lightly fried in toasted sesame oil, infused with garlic and chili peppers, then tossed in soy & gochujang sauce.</h4></p>
+            </div>
+        </div>
+    </div>
+
+     <!-- Salads Category -->
+     <div class="menu-category">
+        <h3>Salads</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('Sashimi Salad')">
+                <img src="./images/sashimi salad.jpeg" alt="Sashimi Salad">
+                <h4>Sashimi Salad</h4>
+                <h4>$15.99</h4>
+                <p><h4>Freshly sliced assorted raw fish over a bed of mixed greens with Asian sesame dressing.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Asian Chicken Salad')">
+                <img src="./images/chinese chicken salad.jpeg" alt="Asian Chicken Salad">
+                <h4>Asian Chicken Salad</h4>
+                <h4>$11.99</h4>
+                <p><h4>Grilled chicken over a bed of mixed greens topped with deep fried wonton chips and Asian sesame dressing.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Tofu Salad')">
+                <img src="./images/1_tofu salad.jpg" alt="Tofu Salad">
+                <h4>Tofu Salad</h4>
+                <h4>$9.99</h4>
+                <p><h4>Tofu marinated in garlic-soy sauce topped with pink salmon, tomatoes, bean spouts, watercress, and
+                    green onions served on a bed of mixed greens.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Strawberry Avocado Salad')">
+                <img src="./images/strawberry avocado.JPG" alt="Strawberry Avocado Salad">
+                <h4>Stawberry Avocado Salad</h4>
+                <h4>$10.99</h4>
+                <p><h4>Sliced strawberries and avocado over a bed of mixed greens and sliced almonds with a strawberry vinaigrette.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Caesar Salad')">
+                <img src="./images/caesar-salad.jpg" alt="Caesar Salad">
+                <h4>Caesar Salad</h4>
+                <h4>$9.99</h4>
+                <p><h4>Romaine lettuce tossed in a creamy, tangy dressing, garnished with crumbled eggs, olives, croutons and parmesan cheese.</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Pineapple Fluff Fruit Salad')">
+                <img src="./images/pineapple fluff.jpeg" alt="Fruit Salad">
+                <h4>Pineapple Fluff Salad</h4>
+                <h4>$9.99</h4>
+                <p><h4>Cool and creamy pineapple pudding dessert with extra fluff!</h4></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plate Lunches Category -->
+    <div class="menu-category">
+        <h3>Plate Lunches</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('Hawaiian BBQ Chicken')">
+                <img src="./images/bbq chicken.png" alt="BBQ Chicken">
+                <h4>BBQ Chicken</h4>
+                <h4>$14.99</h4>
+                <p><h4>Sweet and Smokey chicken grilled to perfection in a Hawaiian style teriyaki sauce </h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Loco Moco')">
+                <img src="./images/loco moco.jpeg" alt="Burger patty, rice and gravy">
+                <h4>Loco Moco</h4>
+                <h4>$11.99</h4>
+                <p><h4>1lb.grilled beef burger with sauteed mushrooms on a bed of white rice smothered in gravy and topped with a sunny side egg</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Kalbi short ribs')">
+                <img src="./images/Kalbi ribs.jpg" alt="Korean style short ribs">
+                <h4>Kalbi ribs</h4>
+                <h4>$21.99</h4>
+                <p><h4>Sweet and Salty Korean style BBQ ribs sesoned in gochujang, topped with green onions and white sesame seeds</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Beef stew')">
+                <img src="./images/beef stew.jpg" alt="Hearty stew with beef and vegetables">
+                <h4>Beef Stew</h4>
+                <h4>$15.99</h4>
+                <p><h4>Hearty stew with beef, veggies and potatoes</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Korean Chicken')">
+                <img src="./images/Korean chicken.jpg" alt="Korean style fried chicken">
+                <h4>Korean Fried Chicken</h4>
+                <h4>$16.99</h4>
+                <p><h4>Korean Style Fried Chicken, Light and crispy, topped with green onions</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Lau Lau Combo')">
+                <img src="./images/laulau combo.jpg" alt="3 entree Hawaiian plate lunch combo">
+                <h4>Lau Lau Combo</h4>
+                <h4>$18.99</h4>
+                <p><h4>Seasoned pork and butterfish wrapped in luau leaves, with poi, mac salad, and chef salad</h4></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Sandwiches Category -->
+    <div class="menu-category">
+        <h3>Sandwiches</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('Teri Beef')">
+                <img src="./images/bbq beef sandwich.jpeg" alt="BBQ beef sandwich">
+                <h4>Teri Beef</h4>
+                <h4>$10.99</h4>
+                <p><h4>Sweet and Salty Teriyaki seasoned burger</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Mahi Mahi')">
+                <img src="./images/mahi mahi sandwich.jpg" alt="Mahi fish sandwich">
+                <h4>Mahi Mahi</h4>
+                <h4>$12.99</h4>
+                <p><h4>Freshly caught Mahi Mahi Sandiwch</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Tuna Melt')">
+                <img src="./images/tuna melt.jpg" alt="Grilled cheese with tuna">
+                <h4>Tuna Melt</h4>
+                <h4>$8.99</h4>
+                <p><h4>Tuna and 3-cheese melt on toasted sourdough bread</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Gravy Cheeseburger')">
+                <img src="./images/gravy cheeseburger.jpeg" alt="Gravy burger">
+                <h4>Gravy Cheeseburger</h4>
+                <h4>$10.99</h4>
+                <p><h4>Cheeseburger smothered in gravy and topped with cheese and onion rings</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Kanak Special')">
+                <img src="./images/Kanak Special.jpg" alt="Hawaiian style burger with pineapple and vegetables">
+                <h4>Kanak Special</h4>
+                <h4>$14.99</h4>
+                <p><h4>Grilled Teriyaki Chicken and Pineapple burger topped wiht avocado slices, onions, lettuce and tomatoes</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Kalua Pork Sliders')">
+                <img src="./images/kalua sliders.jpeg" alt="Pulled pork with slaw">
+                <h4>Kalua Pork Sliders</h4>
+                <h4>$13.99</h4>
+                <p><h4>Slow roasted pulled pork, topped with slaw and onion rings</h4></p>
+            </div>
+        </div>
+    </div>
+
+     <!-- Sides Category -->
+     <div class="menu-category">
+        <h3>Sides</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('Mac Salad')">
+                <img src="./images/mac salad.png" alt="Macaroni salad">
+                <h4>Mac Salad</h4>
+                <h4>$3.99</h4>
+                <p><h4>Macaroni, shredded carrots, and chopped celery tossed in a garlic mayo sauce</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Hawaiian Style Potato Salad')">
+                <img src="./images/potato salad.jpg" alt="Potato salad">
+                <h4>Hawaiian Style Potato Salad</h4>
+                <h4>$2.99</h4>
+                <p><h4>Hawaiian style potato and egg salad tossed with sliced carrots, olives and celery</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Fried Rice')">
+                <img src="./images/fried rice.png" alt="Deep fried mochi balls made with poi">
+                <h4>Fried Rice</h4>
+                <h4>$3.99</h4>
+                <p><h4>Chinese style fried rice with chinese bbq pork, carrots, peas and pineapple</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Pork Hash')">
+                <img src="./images/pork hash.jpg" alt="Custard pie">
+                <h4>Pork Hash</h4>
+                <h4>$2.99</h4>
+                <p><h4>Steamed Chinese Pork and Shrimp Bao</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Pickled Onion')">
+                <img src="./images/pickled onion.jpg" alt="Banana cream pie">
+                <h4>Pickled Onion</h4>
+                <h4>$1.99</h4>
+                <p><h4>Pickled red onion</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Lomi Salmon')">
+                <img src="./images/Lomi-Lomi-Salmon-.jpg" alt="Creme stuffed pastry">
+                <h4>Lomi Lomi Salmon</h4>
+                <h4>$8.99</h4>
+                <p><h4>Smoked salmon massaged into a tomato and onion blend ceviche</h4></p>
+            </div>
+        </div>
+    </div>
+
+      <!-- Desserts Category -->
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('Haupia')">
+                <img src="./images/haupia-recipe.jpg" alt="Coconut pudding dessert">
+                <h4>Haupia</h4>
+                <h4>$8.99</h4>
+                <p><h4>Hawaiian style coconut pudding dessert</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Butter Mochi')">
+                <img src="./images/buttermochi.jpeg" alt="Butter flavored mochi">
+                <h4>Buttermochi</h4>
+                <h4>$7.99</h4>
+                <p><h4>Hawaiian style butterd mochi dessert</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Poi Balls')">
+                <img src="./images/poi mochi balls.jpg" alt="Deep fried mochi balls made with poi">
+                <h4>Poi balls</h4>
+                <h4>$6.99</h4>
+                <p><h4>Deep fried mochi balls made with poi</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Custard Pie')">
+                <img src="./images/custard pie.png" alt="Custard pie">
+                <h4>Custard Pie</h4>
+                <h4>$9.99</h4>
+                <p><h4>Hawaiian Style Custard pie</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Banana Cream Pie')">
+                <img src="./images/banana cream pie.jpeg" alt="Banana cream pie">
+                <h4>Banana Cream Pie</h4>
+                <h4>$8.99</h4>
+                <p><h4>Decadent Banana Cream pie</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Coco Puff')">
+                <img src="./images/coco puffs.png" alt="Creme stuffed pastry">
+                <h4>Coco Puffs</h4>
+                <h4>$9.99</h4>
+                <p><h4>Chilled cream filled puff pastry</h4></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Drinkss Category -->
+    <div class="menu-category">
+        <h3>Drinks</h3>
+        <div class="menu-items">
+            <div class="menu-item" onclick="addToCart('POG')">
+                <img src="./images/Pog juice.jpeg" alt="Pineapple Orange Guava flavored juice">
+                <h4>POG Juice</h4>
+                <h4>$1.99</h4>
+                <p><h4>Pineapple Orange Guava flavored drink</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Guava Juice')">
+                <img src="./images/Guava juice.jpg" alt="Guava flavored juice">
+                <h4>Guava Juice</h4>
+                <h4>$1.99</h4>
+                <p><h4>Guava flavored drink</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Lilikoi Passionfruit Juice')">
+                <img src="./images/Lilikoi passion juice.jpg" alt="Lilikoi Passionfruit flavored juice">
+                <h4>Lilikoi Passionfruit Juice</h4>
+                <h4>$1.99</h4>
+                <p><h4>Lilikoi Passionfruit flavored drink</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Green Tea Lychee')">
+                <img src="./images/green tea lychee drink.jpg" alt="Green tea & Lychee flavored juice">
+                <h4>Green Tea Lychee Juice</h4>
+                <h4>$1.99</h4>
+                <p><h4>Green tea & Lychee flavored drink</h4></p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Strawberry Guava')">
+                <img src="./images/strawberry guava.jpg" alt="Strawberry Guava flavored juice">
+                <h4>Strawberry Guava Juice</h4>
+                <h4>$1.99</h4>
+                <h4>Strawberry Guava flavored drink</h4>
+            </div>
+            <div class="menu-item" onclick="addToCart('Pineapple Orange')">
+                <img src="./images/pineapple orange juice.jpeg" alt="Pineapple orange flavored juice">
+                <h4>Pineapple Orange Juice</h4>
+                <h4>$1.99</h4>
+                <h4>Pineapple orange flavored flavored</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat similar structure for other categories (Salads, Plate Lunches, etc.) -->
+</section>
+    
+    
+</body>
+</html>

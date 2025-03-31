@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Kitchen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="https://your-social-media-link" target="_blank">Instagram</a></li>
+            <li><a href="https://your-social-media-link" target="_blank">Facebook</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Virtual Kitchen</h1>
+        <p>Bringing Hawaii’s culture and food into the digital world!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item" onclick="showMenuDetails('poke')">
+            <img src="poke.jpg" alt="Poke">
+            <h3>Poke Bowl</h3>
+        </div>
+        <div id="menu-popup" class="popup">
+            <div class="popup-content">
+                <h2 id="popup-title">Poke Bowl</h2>
+                <p id="popup-description">A delicious Hawaiian dish with fresh fish, rice, and toppings.</p>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <form id="review-form">
+            <textarea placeholder="Leave a review..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+        <h2>Payment</h2>
+        <form>
+            <input type="text" placeholder="Card Number" required>
+            <input type="text" placeholder="Expiration Date" required>
+            <input type="text" placeholder="CVV" required>
+            <button type="submit" onclick="storePaymentInfo()">Submit Payment</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

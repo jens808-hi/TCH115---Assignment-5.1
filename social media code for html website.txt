@@ -1,0 +1,61 @@
+<section id="social-media">
+            <h5>Follow Us</h5>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                    <img src="./images/fb logo.png" alt="" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a> 
+                <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+                    <img src="./images/ig.png" alt="" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank" class="social-button X">
+                    <img src="./images/x logo.jpg" alt="" class="social-icon">
+                    <i class="fab fa-X"></i>
+                </a>
+                <a href="https://www.TikTok.com" target="_blank" class="social-button X">
+                    <img src="./images/tik tok.jpg" alt="" class="social-icon">
+                    <i class="fab fa-TikTok"></i>
+                </a>
+            </div>
+        </section>
+
+ <!-- Social Media Links Section -->
+         <section id="social-media">
+            <h5>Follow Us and Share the Aloha!</h5>
+            <div class="social-buttons">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                    <img src="./images/fb logo.png" alt="Facebook" class="social-icon">
+                    <div class="social-description">
+                        <i class="fab fa-facebook-f"></i>
+                        <p>Connect with us on Facebook and share your Hawaiian experiences!</p>
+                    </div>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+                    <img src="./images/ig.png" alt="Instagram" class="social-icon">
+                    <div class="social-description">
+                        <i class="fab fa-instagram"></i>
+                        <p>Follow us on Instagram for stunning photos and updates from Hawaii.</p>
+                    </div>
+                </a>
+                <!-- X (formerly Twitter) -->
+                <a href="https://www.x.com" target="_blank" class="social-button X">
+                    <img src="./images/x logo.jpg" alt="X" class="social-icon">
+                    <div class="social-description">
+                        <i class="fab fa-X"></i>
+                        <p>Join the conversation on X and stay connected with our latest news!</p>
+                    </div>
+                </a>
+                <!-- TikTok -->
+                <a href="https://www.TikTok.com" target="_blank" class="social-button tik-tok">
+                    <img src="./images/tik tok.jpg" alt="TikTok" class="social-icon">
+                    <div class="social-description">
+                        <i class="fab fa-TikTok"></i>
+                        <p>Watch and share videos on TikTok for a fun and creative way to connect!</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </nav>

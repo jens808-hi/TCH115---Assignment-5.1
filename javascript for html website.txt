@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Kitchen</title>
+    <link rel="stylesheet" href="./Jen_Ai.css">
+    <script src="./Jen_Ai.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="landing-page">
+    <!-- Home Section -->
+    <section id="landing-page">
+        <h1>K a n a k &nbsp;&nbsp;K i t c h e n</h1>
+    </section>
+        <button onclick="window.location.href='menu.html'">Explore More</button>
+    
+    <div class="button"> <!-- Button to play island music -->
+    </div>
+        <button id="onbtn" onclick="playOn()">Play Island Music</button> <!-- Button to play local island music -->
+    </div>
+
+    <div class="music"> <!-- Audio player for background music -->
+        <audio controls loop> <!-- Audio controls and loop option for continuous play -->
+            <audio id="island music" src="./music/blue-island-144122 hawaii music.mp3" type="audio/mp3"></audio> <!-- Source for Hawaiian background music -->
+        </audio>
+    </div>
+ 
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/menu.html">Menu</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/meet.html">Meet the Ohana</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/gallery.html">Gallery</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/checkout.html">Checkout</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/contactUs.html">Contact Us</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/reviews.html">Reviews</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/recipes.html">Recipes</a></li>
+            <li><a href="C:/Users/kahil/UAT/Coding%20practice/social.html">Social Media</a></li>
+        </ul>
+
+        <section id="social-media">
+            <h5>Follow Us</h5>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                    <img src="./images/fb logo.png" alt="" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a> 
+                <a href="https://www.instagram.com" target="_blank" class="social-button instagram">
+                    <img src="./images/ig.png" alt="" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank" class="social-button X">
+                    <img src="./images/x logo.jpg" alt="" class="social-icon">
+                    <i class="fab fa-X"></i>
+                </a>
+                <a href="https://www.TikTok.com" target="_blank" class="social-button X">
+                    <img src="./images/tik tok.jpg" alt="" class="social-icon">
+                    <i class="fab fa-TikTok"></i>
+                </a>
+            </div>
+        </section>
+
+        <ul>
+            <!-- The Home button will be moved using CSS -->
+            <li><button class="home-btn" onclick="scrollToTop()">Home</button></li>
+            <!-- Other links -->
+        </ul>
+    </nav>
+
+    <!-- Landing Page Section with Slideshow -->
+<section id="landing-page">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="dish1.jpg" alt="Dish 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="dish2.jpg" alt="Dish 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="dish3.jpg" alt="Dish 3">
+        </div>
+    </div>
+</section>
+
+
+<script>
+    // Create the audio object once with the provided audio file
+let audio = new Audio("./music/blue-island-144122 hawaii music.mp3");  
+
+// Function to start playing the music
+function playOn() {
+    var buttons = document.querySelectorAll("button"); // Select all button elements in the document
+
+    buttons.forEach(button => { // Loop through each button and add a click event listener
+        button.addEventListener("click", () => {
+            if (audio.paused) { // Only play the audio if it's currently paused to avoid playing it multiple times
+                audio.play(); // Play the audio
+            }
+        });
+    });
+}
+
+</script>
+
+
+   
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
